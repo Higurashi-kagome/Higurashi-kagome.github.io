@@ -22,10 +22,10 @@ body {
 }
 body a {
   text-decoration: none;
-  color: #428bca;
+  color: var(--maincolor);
 }
 body a:hover {
-  color: #cd5c5c;
+  color: #ffa500;
 }
 .content {
   max-width: 50rem;
@@ -51,7 +51,7 @@ body a:hover {
 }
 .content #header .title {
   font-size: 2rem;
-  color: #f5f5f0;
+  color: #f5f5f0 /* orange */;
   font-family: 'Asap Condensed', sans-serif;
 }
 .content #header .title a {
@@ -146,7 +146,7 @@ body a:hover {
   left: 0;
   right: 0;
   height: 40%;
-  background-color: #48ac73;
+  background-color: var(--maincolor);
 }
 .content #main .recent_post_list .recent_post_item .recent_post_excerpt {
   text-align: justify;
@@ -218,19 +218,26 @@ body a:hover {
 .content .pagination.default > *:first-child {
   margin-left: 0rem;
 }
+.content .pagination.default > a {
+  color: var(--maincolor);
+}
 .content .pagination.default > a:hover {
-  background: rgba(204,204,204,0.522);
-  color: #428bca;
+  background: rgba(255,165,0,0.161);
 }
 .post_title {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0.625rem;
 }
-.post_title time {
-  float: right;
+.post_title >.post-meta >#busuanzi_container_page_pv,
+.post_title >.post-meta >time {
   font-size: initial;
   line-height: 2.625rem;
   display: inline;
   font-weight: normal;
+}
+.post_title >.post-meta >#busuanzi_container_page_pv {
+  margin-right: 0.685rem;
 }
 .post_title +hr {
   border-top: 0.0625rem solid #ccc;
@@ -278,7 +285,6 @@ div.article-sort-item time {
 .page_content a {
   position: relative;
   overflow: hidden;
-  color: #428bca;
   text-decoration: none;
   outline: 0;
 }
