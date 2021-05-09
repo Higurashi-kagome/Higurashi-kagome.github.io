@@ -1,0 +1,137 @@
+.highlight {
+  color: #333;
+  background: #f8f8f8;
+}
+.highlight .code .comment,
+.highlight .code .quote {
+  color: #998;
+  font-style: italic;
+}
+.highlight .code .keyword,
+.highlight .code .selector-tag,
+.highlight .code .subst {
+  color: #333;
+  font-weight: bold;
+}
+.highlight .code .number,
+.highlight .code .literal,
+.highlight .code .variable,
+.highlight .code .template-variable,
+.highlight .code .tag .attr {
+  color: #008080;
+}
+.highlight .code .string,
+.highlight .code .doctag {
+  color: #d14;
+}
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .selector-id {
+  color: #900;
+  font-weight: bold;
+}
+.highlight .code .subst {
+  font-weight: normal;
+}
+.highlight .code .type,
+.highlight .code .class .title {
+  color: #458;
+  font-weight: bold;
+}
+.highlight .code .tag,
+.highlight .code .name,
+.highlight .code .attribute {
+  color: #000080;
+  font-weight: normal;
+}
+.highlight .code .regexp,
+.highlight .code .link {
+  color: #009926;
+}
+.highlight .code .symbol,
+.highlight .code .bullet {
+  color: #990073;
+}
+.highlight .code .built_in,
+.highlight .code .builtin-name {
+  color: #0086b3;
+}
+.highlight .code .meta {
+  color: #999;
+  font-weight: bold;
+}
+.highlight .code .deletion {
+  background: #fdd;
+}
+.highlight .code .addition {
+  background: #dfd;
+}
+.highlight .code .emphasis {
+  font-style: italic;
+}
+.highlight .code .strong {
+  font-weight: bold;
+}
+pre {
+  overflow-x: auto;
+  padding: 0.625rem 0.9375rem;
+  padding-bottom: 0;
+  border-radius: 0.25rem;
+  font-size: 0.8125rem;
+  -webkit-border-radius: 0.25rem;
+}
+pre code {
+  display: block;
+  padding: 0;
+  border: none;
+}
+code {
+  padding: 0 0.3125rem;
+  border-radius: 0.125rem;
+  -webkit-border-radius: 0.125rem;
+}
+.highlight {
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 0.625rem 0.9375rem;
+  border: 0.0625rem solid #eaecef;
+  border-radius: 0.4375rem;
+  -webkit-border-radius: 0.4375rem;
+}
+.highlight figcaption {
+  margin: 0;
+  font-size: 0.9em;
+  transform: scale(1);
+}
+.highlight a {
+  float: right;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.highlight pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.highlight table {
+  width: 100%;
+}
+.highlight table td.gutter {
+  padding: 0;
+  width: 2%;
+  opacity: 0.5;
+}
+.highlight table td.code {
+  padding-left: 1%;
+}
+.highlight table td.code >pre {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.highlight .line {
+  height: 1.375rem;
+}

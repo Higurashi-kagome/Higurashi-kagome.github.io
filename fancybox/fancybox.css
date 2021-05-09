@@ -1,0 +1,44 @@
+/* 覆盖层 */
+.fancybox-overlay {
+  /* 固定覆盖层 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* flex 布局 */
+  display: flex;
+  /* 子元素水平居中 */
+  justify-content: center;
+  /* 子元素竖直居中 */
+  align-items: center;
+  /* 子元素对齐方式：竖直对齐 */
+  flex-direction: column;
+}
+
+/* 图片包装 */
+.fancybox-img-wrap {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 50%);
+}
+
+/* 图片 */
+img.fancybox-img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid rgb(238, 240, 244);
+}
+
+/* 图片标题包装 */
+.fancybox-img-alt-wrap{
+  margin-top: 0.5rem;
+}
+
+/* 图片标题 */
+.fancybox-img-alt{
+  padding: 2px 20px;
+  text-shadow: 0 1px 2px #222;
+  font-weight: bold;
+}

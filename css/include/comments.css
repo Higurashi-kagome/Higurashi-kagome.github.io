@@ -1,0 +1,31 @@
+.comments.valinecomments {
+  border-radius: 0.3125rem;
+  margin-top: 2rem;
+}
+.comments.valinecomments #vcomments >div.vpanel >div.vwrap {
+  border: 0.0625rem solid #ccc;
+}
+.comments.valinecomments #vcomments .vwrap .vheader .vinput {
+  border-bottom: 0.125rem dashed #dedede;
+}
+.comments.valinecomments #vcomments .vbtn {
+  border: 0.0625rem solid #dedede;
+}
+.comments.vssuecomments {
+  margin-top: 2rem;
+}
+.comments.vssuecomments .vssue-status-info {
+  display: none;
+}
+.comments.vssuecomments >.vssue {
+  padding: 0rem;
+}
+.comments.vssuecomments >.vssue >.vssue-body >.vssue-new-comment >.vssue-comment-avatar {
+  display: none;
+}
+.comments.vssuecomments >.vssue >.vssue-body >.vssue-new-comment >.vssue-new-comment-body {
+  margin-left: 0rem;
+}
+.comments.vssuecomments >.vssue >.vssue-body >.vssue-new-comment >.vssue-new-comment-footer {
+  margin-left: 0rem;
+}

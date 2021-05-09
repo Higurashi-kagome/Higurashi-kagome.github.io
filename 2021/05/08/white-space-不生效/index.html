@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>white-space 不生效 Higurashi-kagome</title><link rel="shortcut icon" href="/images/bitbug_favicon.ico"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap Condensed&amp;subset=latin"><link rel="stylesheet" href="/fancybox/fancybox.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Higurashi-kagome" type="application/atom+xml">
+</head><body><div class="content"><header id="header"><div class="header_box"><div class="title"><a href="/"><span>Higurashi-kagome</span></a></div><nav class="nav"><ul class="nav_ul"><li class="nav_li"><a href="/">首页</a></li><li class="nav_li"><a href="/categories">分类</a></li><li class="nav_li"><a href="/tags">标签</a></li><li class="nav_li"><a href="/archives">归档</a></li><li class="nav_li"><a href="/contact">联系</a></li><li class="nav_li"><a href="/about">关于</a></li></ul></nav></div></header><div id="main"><article class="post"><h1 class="post_title">white-space 不生效<time datetime="2021-05-08T13:42:05.000Z">2021-05-08</time></h1><hr><div class="post_content"><p>今天在尝试实现主题代码块自动换行的时候，发现 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/white-space">white-space</a> 设为 pre-wrap，<a target="_blank" rel="external nofollow noopener noreferrer" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/word-break">word-break</a> 设为 break-word 没能使代码换行，pre 元素总是有它的子元素那么宽。</p>
+<span id="more"></span>
+
+<p>后来发现是因为将 pre 元素的 width 属性设置成了 max-content：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pre&#123;</span><br><span class="line">    <span class="attribute">width</span>: max-content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这使得 pre 元素的宽度总是随着子元素的宽度扩展，没有换行的机会，所以 white-space 和 word-wrap 没效果。</p>
+</div></article><div class="pagination prev_next"><a class="prev-post pull-left" href="/2021/05/08/%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C/">实现自动换行</a><a class="next-post pull-right" href="/2021/05/07/%E6%B2%A1%E4%BB%80%E4%B9%88%E8%BF%9B%E5%B1%95/">没什么进展</a></div><div class="comments vssuecomments"><link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css"><div id="vssuecomments"></div><script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script><script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script><script>new Vue({
+    el: '#vssuecomments',
+    render: h => h('Vssue', {
+        props: {
+            title: 'Vssue',
+            options: {"enable":true,"owner":"Higurashi-kagome","repo":"Higurashi-kagome.github.io","clientId":"d338a76d51847dd6d568","clientSecret":"5a7943739f48d679a17061d796ef004e5e6ac67f","autoCreateIssue":true},
+        }
+    })
+});</script></div></div></div><script src="/js/jquery.min.js"></script><script src="/js/load-more.js"></script><script src="/js/comments-edit.js"></script><script src="/fancybox/fancybox.js"></script><script src="/js/code-block.js"> </script></body></html>
