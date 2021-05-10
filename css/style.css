@@ -302,7 +302,8 @@ div.article-sort-item time {
   max-width: 100%;
   margin: 0 auto;
   padding-top: 0.5em;
-  border: 0.125rem solid #eef0f4;
+  border: 0.525rem solid #eef0f4;
+  border-radius: 0.4rem;
   display: block;
   cursor: pointer;
   object-fit: cover;
