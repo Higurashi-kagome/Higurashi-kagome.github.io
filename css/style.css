@@ -28,10 +28,9 @@ body a:hover {
   color: #ffa500;
 }
 .content {
-  max-width: 50rem;
   border-radius: 1rem;
   background-color: transparent;
-  margin: 3.75rem auto 6.75rem;
+  margin: 3.75rem 20rem 6.75rem;
 }
 .content #header .header_box {
   background-color: var(--maincolor);
@@ -483,9 +482,15 @@ pre tt {
 #footer .info a:hover {
   border-bottom: 0.0625rem solid;
 }
-@media print, screen and (max-width: 36.25rem) {
+@media (max-width: 61.9375rem) {
   .content {
-    margin: 0 auto;
+    margin: 0;
+  }
+  .header_box {
+    font-size: 2rem;
+  }
+  .header_box .title {
+    font-size: 3rem !important;
   }
 }
 .post_info::after,
